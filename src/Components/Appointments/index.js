@@ -24,8 +24,9 @@ export default function Appointments({ data, onCancel }) {
     <Container past={isPasted}>
       <Left>
         <Avatar
-          resizeMode="contain"
-          source={{ uri: data.provider.avatar.url }}
+          source={{
+            uri: `https://api.adorable.io/avatar/50/${data.provider.name}.png`,
+          }}
         />
 
         <Info>
